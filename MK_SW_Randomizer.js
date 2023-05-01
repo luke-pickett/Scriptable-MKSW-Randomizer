@@ -474,24 +474,26 @@ function getRandomMap(mapList)
 ///////////////////////////////////
 
 
-for (i=0; i<parseInt(input, 10); i++) {
+for (i=0; i < parseInt(input, 10); i++) {
     let row = widget.addStack();
     row.layoutHorizontally();
 
-    while(true){
+    while(true) {
         randomMap = getRandomMap(mapList)
         randomMapString = `${randomMap["name"]} (${randomMap["cup"]})`
         if(usedMaps.includes(randomMapString) == false){
             usedMaps.push(randomMapString)
-            break
+            continue
+        }
+        else {
+            let text = row.addText(randomMapString);
+                text.font = Font.boldSystemFont(20);
+                text.minimumScaleFactor = 0.5
+                text.textColor = Color.white()
+                text.shadowColor = Color.white()
+                text.shadowRadius = 0.2
         }
     }
-    let text = row.addText(randomMapString);
-    text.font = Font.boldSystemFont(20);
-    text.minimumScaleFactor = 0.5
-    text.textColor = Color.black()
-    text.shadowColor = Color.white()
-    text.shadowRadius = 0.2
 }
 
 Script.setWidget(widget);
