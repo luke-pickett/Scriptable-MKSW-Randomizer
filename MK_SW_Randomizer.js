@@ -449,15 +449,15 @@ function getRandomInt(max){
 function getRandomMap(mapList)
 {
     let totalWeight = 0
-    for (j=0; i<mapList.length; j++) {
-        totalWeight += mapList[j]["weight"]
+    for (i=0; i<mapList.length; i++) {
+        totalWeight += mapList[i]["weight"]
     }
     let randomNum = getRandomInt(totalWeight)
     let weightCounter = 0
-    for (j=0; i<mapList.length; j++) {
-        weightCounter += mapList[j]["weight"]
+    for (i=0; i<mapList.length; i++) {
+        weightCounter += mapList[i]["weight"]
         if (randomNum < weightCounter) {
-            return mapList[j]
+            return mapList[i]
         }
     }
 }
@@ -486,7 +486,7 @@ for (i=0; i < input; i++) {
     usedMaps.add(randomMap["name"])
 
     // let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]}) ${i}`);
-    let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]})`);
+    let text = row.addText(`${i}`);
     text.font = Font.boldSystemFont(20);
     text.minimumScaleFactor = 0.5
     text.textColor = Color.white()
