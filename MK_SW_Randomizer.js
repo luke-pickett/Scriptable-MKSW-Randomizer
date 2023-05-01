@@ -479,10 +479,10 @@ for (i=0; i < input; i++) {
     row.layoutHorizontally();
 
     // Repeats until a map that hasn't been used is found //
-    let randomMap
+    let randomMap = getRandomMap(mapList)
     while(true) {
-        randomMap = getRandomMap(mapList)
         if (usedMaps.has(randomMap)) {
+            randomMap = getRandomMap(mapList)
             continue
         } else {
             usedMaps.add(randomMap)
