@@ -474,7 +474,7 @@ function getRandomMap(mapList)
 ///////////////////////////////////
 
 
-for (i=0; i < input; i++) {
+for (j=0; j < input; j++) {
     let row = widget.addStack();
     row.layoutHorizontally();
 
@@ -486,7 +486,7 @@ for (i=0; i < input; i++) {
     usedMaps.add(randomMap["name"])
 
     // let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]}) ${i}`);
-    let text = row.addText(`${i}`);
+    let text = row.addText(`${j}`);
     text.font = Font.boldSystemFont(20);
     text.minimumScaleFactor = 0.5
     text.textColor = Color.white()
