@@ -168,7 +168,7 @@ const mapList = [
         name: "Rainbow Road",
         cup: "Lightning Cup",
         weight: 1
-    }
+    },
 
     {
         name: "Yoshi Circuit",
