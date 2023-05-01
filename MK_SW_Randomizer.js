@@ -482,10 +482,10 @@ for (i=0; i < input; i++) {
     let randomMap
     while(true) {
         randomMap = getRandomMap(mapList)
-        if (usedMaps.has(randomMap["name"])) {
+        if (usedMaps.has(randomMap)) {
             continue
         } else {
-            usedMaps.add(randomMap["name"])
+            usedMaps.add(randomMap)
             break
         }
     }
