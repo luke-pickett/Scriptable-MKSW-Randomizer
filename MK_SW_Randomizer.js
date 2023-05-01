@@ -480,8 +480,10 @@ for (i=0; i < input; i++) {
 
     // Repeats until a map that hasn't been used is found //
     while(true) {
-        randomMap = getRandomMap(mapList)
-        if(!usedMaps.includes(randomMap["name"])){
+        let randomMap = getRandomMap(mapList)
+        if (usedMaps.includes(randomMap["name"])) {
+            continue
+        } else {
             usedMaps.push(randomMap["name"])
             break
         }
