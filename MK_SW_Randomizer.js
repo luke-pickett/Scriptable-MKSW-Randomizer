@@ -479,20 +479,14 @@ for (i=0; i < input; i++) {
     row.layoutHorizontally();
 
     // Repeats until a map that hasn't been used is found //
-    // while(true) {
-    //     randomMap = getRandomMap(mapList)
-    //     if(!usedMaps.includes(randomMap)){
-    //         usedMaps.push(randomMap)
-    //         break
-    //     }
-    // }
-    // let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]}) ${i}`);
-    // text.font = Font.boldSystemFont(20);
-    // text.minimumScaleFactor = 0.5
-    // text.textColor = Color.white()
-    // text.shadowColor = Color.white()
-    // text.shadowRadius = 0.2
-    let text = row.addText(`${i}`);
+    while(true) {
+        randomMap = getRandomMap(mapList)
+        if(!usedMaps.includes(randomMap["name"])){
+            usedMaps.push(randomMap["name"])
+            break
+        }
+    }
+    let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]}) ${i}`);
     text.font = Font.boldSystemFont(20);
     text.minimumScaleFactor = 0.5
     text.textColor = Color.white()
