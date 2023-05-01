@@ -480,15 +480,11 @@ for (i=0; i < input; i++) {
 
     // Repeats until a map that hasn't been used is found //
     let randomMap = getRandomMap(mapList)
-    while(true) {
-        if (usedMaps.has(randomMap)) {
-            randomMap = getRandomMap(mapList)
-            continue
-        } else {
-            usedMaps.add(randomMap)
-            break
-        }
+    while (usedMaps.has(randomMap["name"])) {
+        randomMap = getRandomMap(mapList)
     }
+    usedMaps.add(randomMap["name"])
+
     // let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]}) ${i}`);
     let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]})`);
     text.font = Font.boldSystemFont(20);
