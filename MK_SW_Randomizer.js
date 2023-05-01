@@ -426,21 +426,21 @@ const mapList = [
 
 const cupColors = {
     "Mushroom Cup" : Color.red(),
-    "Flower Cup" : Color.orange(),
-    "Star Cup" : Color.yellow(),
+    "Flower Cup" : new Color("#ff8c00"),
+    "Star Cup" : new Color("#ffff00"),
     "Special Cup" : new Color("#ffc800"),
     "Banana Cup" : new Color("#eaff00"),
-    "Leaf Cup" : Color.brown(),
-    "Lightning Cup" : Color.yellow(),
-    "Bell Cup" : Color.purple(),
+    "Leaf Cup" : new Color("#8b4513"),
+    "Lightning Cup" : new Color("#ffff00"),
+    "Bell Cup" : new Color("#ff8c00"),
     "Crossing Cup" : Color.green(),
-    "Golden Dash Cup" : Color.yellow(),
-    "Lucky Cat Cup" : Color.pink(),
-    "Turnip Cup" : Color.purple(),
+    "Golden Dash Cup" : new Color("#ffff00"),
+    "Lucky Cat Cup" : new Color("#ffc800"),
+    "Turnip Cup" : Color.white(),
     "Propeller Cup" : Color.blue(),
-    "Rock Cup" : Color.brown(),
-    "Moon Cup" : Color.purple(),
-    "Fruit Cup" : Color.orange(),
+    "Rock Cup" : new Color("#8b4513"),
+    "Moon Cup" : new Color("#ffff00"),
+    "Fruit Cup" : new Color("#ff8c00"),
     "Boomerang Cup" : Color.red()
 }
 
