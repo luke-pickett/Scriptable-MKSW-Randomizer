@@ -489,7 +489,7 @@ for (i=0; i < input; i++) {
         }
     }
     // let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]}) ${i}`);
-    let text = "test"
+    let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]})`);
     text.font = Font.boldSystemFont(20);
     text.minimumScaleFactor = 0.5
     text.textColor = Color.white()
