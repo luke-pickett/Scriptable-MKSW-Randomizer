@@ -437,7 +437,7 @@ const cupDictionary = {
     "Lightning" : Color.yellow()
 }
 
-let usedMaps = new Array()
+let usedMaps = []
 
 
 function getRandomInt(max){
