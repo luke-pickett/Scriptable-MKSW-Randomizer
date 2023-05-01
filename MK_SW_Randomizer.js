@@ -457,7 +457,7 @@ function getRandomMap(mapList)
     for (i=0; i<mapList.length; i++) {
         weightCounter += mapList[i]["weight"]
         if (randomNum < weightCounter) {
-            return mapList[i]["name"]
+            return mapList[i]
         }
     }
 }
@@ -488,7 +488,7 @@ for (i=0; i<parseInt(input, 10); i++) {
     let text = row.addText(randomMap);
     text.font = Font.boldSystemFont(20);
     text.minimumScaleFactor = 0.5
-    text.textColor = cupDictionary[randomMap.split('- ').pop()];
+    text.textColor = Color.black()
     text.shadowColor = Color.white()
     text.shadowRadius = 0.2
 }
