@@ -110,7 +110,7 @@ const mapList = [
     {
         name: "Dry Dry Desert",
         cup: "Banana Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Donut Plains 3",
@@ -146,13 +146,13 @@ const mapList = [
     {
         name: "Yoshi Valley",
         cup: "Leaf Cup",
-        weight: 1
+        weight: 2
     },
 
     {
         name: "Tick-Tock Clock",
         cup: "Lightning Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Piranha Plant Slide",
@@ -162,7 +162,7 @@ const mapList = [
     {
         name: "Grumble Volcano",
         cup: "Lightning Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Rainbow Road",
@@ -173,7 +173,7 @@ const mapList = [
     {
         name: "Yoshi Circuit",
         cup: "Egg Cup",
-        weight: 1
+        weight: 3
     },
     {
         name: "Excitebike Arena",
@@ -194,7 +194,7 @@ const mapList = [
     {
         name: "Wario's Gold Mine",
         cup: "Triforce Cup",
-        weight: 1
+        weight: 3
     },
     {
         name: "Rainbow Road",
@@ -215,7 +215,7 @@ const mapList = [
     {
         name: "Neo Bowser City",
         cup: "Bell Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Ribbon Road",
@@ -236,12 +236,12 @@ const mapList = [
     {
         name: "Baby Park",
         cup: "Crossing Cup",
-        weight: 1
+        weight: 3
     },
     {
         name: "Cheese Land",
         cup: "Crossing Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Wild Woods",
@@ -262,28 +262,28 @@ const mapList = [
     {
         name: "Toad Circuit",
         cup: "Golden Dash Cup",
-        weight: 1
+        weight: 4
     },
     {
         name: "Choco Mountain",
         cup: "Golden Dash Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Coconut Mall",
         cup: "Golden Dash Cup",
-        weight: 1
+        weight: 2
     },
 
     {
         name: "Tokyo Blur",
         cup: "Lucky Cat Cup",
-        weight: 1
+        weight: 0
     },
     {
         name: "Shroom Ridge",
         cup: "Lucky Cat Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Sky Garden",
@@ -299,127 +299,127 @@ const mapList = [
     {
         name: "New York Minute",
         cup: "Turnip Cup",
-        weight: 1
+        weight: 0
     },
     {
         name: "Mario Circuit 3",
         cup: "Turnip Cup",
-        weight: 1
+        weight: 3
     },
     {
         name: "Kalimari Desert",
         cup: "Turnip Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Walugi Pinball",
         cup: "Turnip Cup",
-        weight: 1
+        weight: 2
     },
 
     {
         name: "Syndey Sprint",
         cup: "Propeller Cup",
-        weight: 1
+        weight: 0
     },
     {
         name: "Snow Land",
         cup: "Propeller Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Mushroom Gorge",
         cup: "Propeller Cup",
-        weight: 1
+        weight: 3
     },
     {
         name: "Sky-High Sundae",
         cup: "Propeller Cup",
-        weight: 1
+        weight: 0
     },
 
     {
         name: "London Loop",
         cup: "Rock Cup",
-        weight: 1
+        weight: 0
     },
     {
         name: "Boo Lake",
         cup: "Rock Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Rock Rock Mountain",
         cup: "Rock Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Maple Treeway",
         cup: "Rock Cup",
-        weight: 1
+        weight: 3
     },
 
     {
         name: "Berlin Byways",
         cup: "Moon Cup",
-        weight: 1
+        weight: 0
     },
     {
         name: "Peach Gardens",
         cup: "Moon Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Merry Mountain",
         cup: "Moon Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "Rainbow Road",
         cup: "Moon Cup",
-        weight: 1
+        weight: 2
     },
 
     {
         name: "Amsterdam Drift",
         cup: "Fruit Cup",
-        weight: 1
+        weight: 0
     },
     {
         name: "Riverside Park",
         cup: "Fruit Cup",
-        weight: 1
+        weight: 2
     },
     {
         name: "DK Summit",
         cup: "Fruit Cup",
-        weight: 1
+        weight: 10
     },
     {
         name: "Yoshi's Island",
         cup: "Fruit Cup",
-        weight: 1
+        weight: 2
     }, 
 
     {
         name: "Bangkok Rush",
         cup: "Boomerang Cup",
-        weight: 1
+        weight: 0
     },
     {
         name: "Mario Circuit",
         cup: "Boomerang Cup",
-        weight: 1
+        weight: 5
     },
     {
         name: "Walugi Stadium",
         cup: "Boomerang Cup",
-        weight: 1
+        weight: 10
     },
     {
         name: "Singapour Speedway",
         cup: "Boomerang Cup",
-        weight: 1
+        weight: 0
     }
 
 ]
