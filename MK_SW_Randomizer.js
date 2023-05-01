@@ -486,7 +486,7 @@ for (j=0; j < input; j++) {
     usedMaps.add(randomMap["name"])
 
     // let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]}) ${i}`);
-    let text = row.addText(`${j}`);
+    let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]})`);
     text.font = Font.boldSystemFont(20);
     text.minimumScaleFactor = 0.5
     text.textColor = Color.white()
