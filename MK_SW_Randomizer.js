@@ -473,9 +473,9 @@ function getRandomMap(numberOfChosenMaps, mapList, totalWeight)
 for (i=0; i<parseInt(input, 10); i++) {
     let row = widget.addStack();
     row.layoutHorizontally();
-
+    
+    let cumlativeWeights = []
     while(true){
-        let cumlativeWeights = []
     for (let i = 0; i < mapList.length; i++) {
         cumulativeWeights[i] = mapList[i]["weight"] + (cumulativeWeights[i - 1] || 0)
     }
