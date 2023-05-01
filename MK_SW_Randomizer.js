@@ -486,7 +486,7 @@ for (i=0; i<parseInt(input, 10); i++) {
             break
         }
     }
-    let text = row.addText(randomMap);
+    let text = row.addText(randomMapString);
     text.font = Font.boldSystemFont(20);
     text.minimumScaleFactor = 0.5
     text.textColor = Color.black()
