@@ -481,10 +481,11 @@ for (i=0; i < parseInt(input, 10); i++) {
     while(true) {
         randomMap = getRandomMap(mapList)
         randomMapString = `${randomMap["name"]} (${randomMap["cup"]})`
-        if(usedMaps.includes(randomMapString) == false){
-            usedMaps.push(randomMapString)
-            break
+        if(usedMaps.includes(randomMap) == false){
+            usedMaps.push(randomMap)
+            continue
         }
+        break
     }
     let text = row.addText(randomMapString);
     text.font = Font.boldSystemFont(20);
