@@ -478,14 +478,16 @@ for (i=0; i < parseInt(input, 10); i++) {
     let row = widget.addStack();
     row.layoutHorizontally();
 
+    // Repeats until a map that hasn't been used is found //
     while(true) {
         randomMap = getRandomMap(mapList)
         randomMapString = `${randomMap["name"]} (${randomMap["cup"]})`
         if(usedMaps.includes(randomMap) == false){
             usedMaps.push(randomMap)
-            continue
         }
-        break
+        else {
+            break
+        }
     }
     let text = row.addText(randomMapString);
     text.font = Font.boldSystemFont(20);
