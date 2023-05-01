@@ -479,8 +479,8 @@ for (i=0; i < input; i++) {
     row.layoutHorizontally();
 
     // Repeats until a map that hasn't been used is found //
+    let randomMap = getRandomMap(mapList)
     while(true) {
-        let randomMap = getRandomMap(mapList)
         if (usedMaps.includes(randomMap["name"])) {
             continue
         } else {
