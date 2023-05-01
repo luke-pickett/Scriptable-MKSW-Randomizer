@@ -424,6 +424,26 @@ const mapList = [
 
 ]
 
+const cupColors = {
+    "Mushroom Cup" : Color.red(),
+    "Flower Cup" : Color.orange(),
+    "Star Cup" : Color.yellow(),
+    "Special Cup" : new Color("#ffc800"),
+    "Banana Cup" : new Color("#eaff00"),
+    "Leaf Cup" : Color.brown(),
+    "Lightning Cup" : Color.yellow(),
+    "Bell Cup" : Color.purple(),
+    "Crossing Cup" : Color.green(),
+    "Golden Dash Cup" : Color.yellow(),
+    "Lucky Cat Cup" : Color.pink(),
+    "Turnip Cup" : Color.purple(),
+    "Propeller Cup" : Color.blue(),
+    "Rock Cup" : Color.brown(),
+    "Moon Cup" : Color.purple(),
+    "Fruit Cup" : Color.orange(),
+    "Boomerang Cup" : Color.red()
+}
+
 
 
 
@@ -489,7 +509,7 @@ for (j=0; j < input; j++) {
     let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]})`);
     text.font = Font.boldSystemFont(20);
     text.minimumScaleFactor = 0.5
-    text.textColor = Color.white()
+    text.textColor = randomMap["cup"] in cupColors ? cupColors[randomMap["cup"]] : Color.white()
     text.shadowColor = Color.white()
     text.shadowRadius = 0.2
 }
