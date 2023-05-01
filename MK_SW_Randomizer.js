@@ -473,6 +473,7 @@ function getRandomMap(numberOfChosenMaps, mapList, totalWeight)
 for (i=0; i<parseInt(input, 10); i++) {
     let row = widget.addStack();
     row.layoutHorizontally();
+}
     
     let cumulativeWeights = []
     while(true){
@@ -491,7 +492,6 @@ for (i=0; i<parseInt(input, 10); i++) {
             usedMaps.push(randomMap)
             break
         }
-    }
     let text = row.addText(randomMap);
     text.font = Font.boldSystemFont(20);
     text.minimumScaleFactor = 0.5
