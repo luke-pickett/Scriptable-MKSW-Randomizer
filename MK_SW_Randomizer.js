@@ -449,15 +449,15 @@ function getRandomInt(max){
 function getRandomMap(mapList)
 {
     let totalWeight = 0
-    for (i=0; i<mapList.length; i++) {
-        totalWeight += mapList[i]["weight"]
+    for (j=0; i<mapList.length; j++) {
+        totalWeight += mapList[j]["weight"]
     }
     let randomNum = getRandomInt(totalWeight)
     let weightCounter = 0
-    for (i=0; i<mapList.length; i++) {
-        weightCounter += mapList[i]["weight"]
+    for (j=0; i<mapList.length; j++) {
+        weightCounter += mapList[j]["weight"]
         if (randomNum < weightCounter) {
-            return mapList[i]
+            return mapList[j]
         }
     }
 }
