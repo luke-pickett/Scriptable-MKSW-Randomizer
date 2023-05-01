@@ -484,7 +484,7 @@ for (i=0; i < input; i++) {
         if (usedMaps.has(randomMap["name"])) {
             continue
         } else {
-            usedMaps.push(randomMap["name"])
+            usedMaps.add(randomMap["name"])
             break
         }
     }
