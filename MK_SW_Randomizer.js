@@ -481,7 +481,7 @@ for (i=0; i<parseInt(input, 10); i++) {
     while(true){
         randomMap = getRandomMap(mapList)
         if(usedMaps.includes(randomMap) == false){
-            usedMaps.push(randomMap)
+            usedMaps.push(`${randomMap["name"]} (${randomMap["cup"]})`)
             break
         }
     }
