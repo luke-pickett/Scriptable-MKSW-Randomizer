@@ -484,9 +484,6 @@ for (i=0; i < parseInt(input, 10); i++) {
         randomMapString = `${randomMap["name"]} (${randomMap["cup"]})`
         if(usedMaps.includes(randomMap) == false){
             usedMaps.push(randomMap)
-            continue
-        }
-        else {
             break
         }
     }
