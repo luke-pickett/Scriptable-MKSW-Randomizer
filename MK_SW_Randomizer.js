@@ -445,17 +445,21 @@ function getRandomInt(max){
     return randomizedInt
 }
 
-// Generates a list of random maps that are weighted //
-function getRandomMap(numberOfChosenMaps, mapList, totalWeight)
+// Generates a random map from mapList and takes their weights into account //
+function getRandomMap(mapList)
 {
-    let chosenMaps = new Array()
-    for(i=0; i<numberOfChosenMaps; i++){
-        let randomMap = mapList[getRandomInt(mapList.length)]
-        if(chosenMaps.includes(randomMap) == false){
-            chosenMaps.push(randomMap)
+    let totalWeight = 0
+    for (i=0; i<mapList.length; i++) {
+        totalWeight += mapList[i]["weight"]
+    }
+    let randomNum = getRandomInt(totalWeight)
+    let weightCounter = 0
+    for (i=0; i<mapList.length; i++) {
+        weightCounter += mapList[i]["weight"]
+        if (randomNum < weightCounter) {
+            return mapList[i]["name"]
         }
     }
-    return chosenMaps
 }
 
 
@@ -473,29 +477,18 @@ function getRandomMap(numberOfChosenMaps, mapList, totalWeight)
 for (i=0; i<parseInt(input, 10); i++) {
     let row = widget.addStack();
     row.layoutHorizontally();
-}
-    
-    let cumulativeWeights = []
-    while(true){
-    for (let i = 0; i < mapList.length; i++) {
-        cumulativeWeights[i] = mapList[i]["weight"] + (cumulativeWeights[i - 1] || 0)
-    }
-    const maxCumulativeWeight = cumulativeWeights[cumulativeWeights.length - 1];
-    const randomNumber = maxCumulativeWeight * Math.random();
-    for (let itemIndex = 0; itemIndex < mapList.length; itemIndex += 1) {
-        if (cumulativeWeights[itemIndex] >= randomNumber) {
-            randomMap = mapList[itemIndex]["name"];
-        }
-    }
 
+    while(true){
+        randomMap = getRandomMap(mapList)
         if(usedMaps.includes(randomMap) == false){
             usedMaps.push(randomMap)
             break
         }
+    }
     let text = row.addText(randomMap);
     text.font = Font.boldSystemFont(20);
     text.minimumScaleFactor = 0.5
-    text.textColor = Color.yellow()
+    text.textColor = cupDictionary[randomMap.split('- ').pop()];
     text.shadowColor = Color.white()
     text.shadowRadius = 0.2
 }
