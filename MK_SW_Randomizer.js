@@ -474,7 +474,7 @@ for (i=0; i<parseInt(input, 10); i++) {
     let row = widget.addStack();
     row.layoutHorizontally();
     
-    let cumlativeWeights = []
+    let cumulativeWeights = []
     while(true){
     for (let i = 0; i < mapList.length; i++) {
         cumulativeWeights[i] = mapList[i]["weight"] + (cumulativeWeights[i - 1] || 0)
