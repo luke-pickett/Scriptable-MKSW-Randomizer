@@ -482,7 +482,7 @@ for (i=0; i < parseInt(input); i++) {
     while(true) {
         randomMap = getRandomMap(mapList)
         randomMapString = `${randomMap["name"]} (${randomMap["cup"]})`
-        if(usedMaps.includes(randomMap) == false){
+        if(!usedMaps.includes(randomMap)){
             usedMaps.push(randomMap)
             break
         }
