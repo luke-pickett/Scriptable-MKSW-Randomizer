@@ -481,13 +481,12 @@ for (i=0; i < parseInt(input); i++) {
     // Repeats until a map that hasn't been used is found //
     while(true) {
         randomMap = getRandomMap(mapList)
-        randomMapString = `${randomMap["name"]} (${randomMap["cup"]})`
         if(!usedMaps.includes(randomMap)){
             usedMaps.push(randomMap)
             break
         }
     }
-    let text = row.addText(randomMapString);
+    let text = row.addText(`${randomMap["name"]} (${randomMap["cup"]})`);
     text.font = Font.boldSystemFont(20);
     text.minimumScaleFactor = 0.5
     text.textColor = Color.white()
