@@ -481,7 +481,7 @@ for (i=0; i<parseInt(input, 10); i++) {
     }
     const maxCumulativeWeight = cumulativeWeights[cumulativeWeights.length - 1];
     const randomNumber = maxCumulativeWeight * Math.random();
-    for (let itemIndex = 0; itemIndex < items.length; itemIndex += 1) {
+    for (let itemIndex = 0; itemIndex < mapList.length; itemIndex += 1) {
         if (cumulativeWeights[itemIndex] >= randomNumber) {
             randMap = mapList[itemIndex]["name"];
         }
