@@ -429,19 +429,22 @@ const cupColors = {
     "Flower Cup" : new Color("#ff8c00"),
     "Star Cup" : new Color("#ffff00"),
     "Special Cup" : new Color("#ffc800"),
+    "Egg Cup" : new Color("#27c924"),
+    "Crossing Cup" : new Color("#27c924"),
+    "Shell Cup" : new Color("#27c924"),
     "Banana Cup" : new Color("#eaff00"),
     "Leaf Cup" : new Color("#8b4513"),
     "Lightning Cup" : new Color("#ffff00"),
-    "Bell Cup" : new Color("#ff8c00"),
-    "Crossing Cup" : Color.green(),
+    "Triforce Cup" : new Color("#ffff00"),
+    "Bell Cup" : new Color("#ffff00"),
     "Golden Dash Cup" : new Color("#ffff00"),
-    "Lucky Cat Cup" : new Color("#ffc800"),
+    "Lucky Cat Cup" : new Color("#b2460f"),
     "Turnip Cup" : Color.white(),
-    "Propeller Cup" : Color.blue(),
-    "Rock Cup" : new Color("#8b4513"),
+    "Propeller Cup" : new Color("#FF5733"),
+    "Rock Cup" : new Color("#7f7f7f"),
     "Moon Cup" : new Color("#ffff00"),
     "Fruit Cup" : new Color("#ff8c00"),
-    "Boomerang Cup" : Color.red()
+    "Boomerang Cup" : Color.blue()
 }
 
 
