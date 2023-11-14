@@ -1,116 +1,156 @@
 const widget = new ListWidget();
 
 // a const list of every map from Mario Kart 8 Deluxe and the cups they belong to including the DLC maps and their weights in RNG
-const mapList = [
-    {
-        name: "Mario Kart Stadium",
-        cup: "Mushroom Cup",
-        weight: 1
-    },
-    {
-        name: "Water Park",
-        cup: "Mushroom Cup",
-        weight: 1
-    },
-    {
-        name: "Sweet Sweet Canyon",
-        cup: "Mushroom Cup",
-        weight: 1
-    },
-    {
-        name: "Thwomp Ruins",
-        cup: "Mushroom Cup",
-        weight: 1
-    },
-
+const maplist = [
     {
         name: "Mario Circuit",
-        cup: "Flower Cup",
+        cup: "Mushroom Cup",
         weight: 1
     },
     {
         name: "Toad Harbor",
-        cup: "Flower Cup",
+        cup: "Mushroom Cup",
         weight: 1
     },
     {
         name: "Twisted Mansion",
-        cup: "Flower Cup",
+        cup: "Mushroom Cup",
         weight: 1
     },
     {
         name: "Shy Guy Falls",
-        cup: "Flower Cup",
+        cup: "Mushroom Cup",
         weight: 1
     },
-
     {
         name: "Sunshine Airport",
-        cup: "Star Cup",
+        cup: "Flower Cup",
         weight: 1
     },
     {
         name: "Dolphin Shoals",
-        cup: "Star Cup",
+        cup: "Flower Cup",
         weight: 1
     },
     {
         name: "Electrodrome",
-        cup: "Star Cup",
+        cup: "Flower Cup",
         weight: 1
     },
-
     {
         name: "Mount Wario",
-        cup: "Star Cup",
+        cup: "Flower Cup",
         weight: 1
     },
     {
         name: "Cloudtop Cruise",
-        cup: "Special Cup",
+        cup: "Star Cup",
         weight: 1
     },
     {
         name: "Bone-Dry Dunes",
-        cup: "Special Cup",
+        cup: "Star Cup",
         weight: 1
     },
     {
         name: "Bowser's Castle",
-        cup: "Special Cup",
+        cup: "Star Cup",
         weight: 1
     },
     {
         name: "Rainbow Road",
+        cup: "Star Cup",
+        weight: 1
+    },
+    {
+        name: "Mario Kart Stadium",
         cup: "Special Cup",
         weight: 1
     },
-
     {
-        name: "Moo Moo Meadows",
-        cup: "Shell Cup",
+        name: "Water Park",
+        cup: "Special Cup",
+        weight: 1
+    },
+    {
+        name: "Sweet Sweet Canyon",
+        cup: "Special Cup",
+        weight: 1
+    },
+    {
+        name: "Thwomp Ruins",
+        cup: "Special Cup",
         weight: 1
     },
     {
         name: "Mario Circuit",
+        cup: "Egg Cup",
+        weight: 1
+    },
+    {
+        name: "Yoshi Circuit",
+        cup: "Egg Cup",
+        weight: 1
+    },
+    {
+        name: "Excitebike Arena",
+        cup: "Egg Cup",
+        weight: 1
+    },
+    {
+        name: "Dragon Driftway",
+        cup: "Egg Cup",
+        weight: 1
+    },
+    {
+        name: "Mute City",
+        cup: "Crossing Cup",
+        weight: 1
+    },
+    {
+        name: "Baby Park",
+        cup: "Crossing Cup",
+        weight: 1
+    },
+    {
+        name: "Cheese Land",
+        cup: "Crossing Cup",
+        weight: 1
+    },
+    {
+        name: "Wild Woods",
+        cup: "Crossing Cup",
+        weight: 1
+    },
+    {
+        name: "Neo Bowser City",
         cup: "Shell Cup",
+        weight: 1
+    },
+    {
+        name: "Ribbon Road",
+        cup: "Shell Cup",
+        weight: 1
+    },
+    {
+        name: "Super Bell Subway",
+        cup: "Shell Cup",
+        weight: 1
+    },
+    {
+        name: "Big Blue",
+        cup: "Shell Cup",
+        weight: 1
+    },
+    {
+        name: "Animal Crossing",
+        cup: "Banana Cup",
         weight: 1
     },
     {
         name: "Cheep Cheep Beach",
-        cup: "Shell Cup",
-        weight: 1
-    },
-    {
-        name: "Toad's Turnpike",
-        cup: "Shell Cup",
-        weight: 1
-    },
-
-    {
-        name: "Dry Dry Desert",
         cup: "Banana Cup",
-        weight: 2
+        weight: 1
     },
     {
         name: "Donut Plains 3",
@@ -118,16 +158,10 @@ const mapList = [
         weight: 1
     },
     {
-        name: "Royal Raceway",
+        name: "Toad's Turnpike",
         cup: "Banana Cup",
         weight: 1
     },
-    {
-        name: "DK Jungle",
-        cup: "Banana Cup",
-        weight: 1
-    },
-
     {
         name: "Wario Stadium",
         cup: "Leaf Cup",
@@ -146,13 +180,12 @@ const mapList = [
     {
         name: "Yoshi Valley",
         cup: "Leaf Cup",
-        weight: 2
+        weight: 1
     },
-
     {
         name: "Tick-Tock Clock",
         cup: "Lightning Cup",
-        weight: 2
+        weight: 1
     },
     {
         name: "Piranha Plant Slide",
@@ -162,42 +195,20 @@ const mapList = [
     {
         name: "Grumble Volcano",
         cup: "Lightning Cup",
-        weight: 2
+        weight: 1
     },
     {
         name: "Rainbow Road",
         cup: "Lightning Cup",
         weight: 1
     },
-
     {
-        name: "Yoshi Circuit",
-        cup: "Egg Cup",
-        weight: 3
-    },
-    {
-        name: "Excitebike Arena",
-        cup: "Egg Cup",
-        weight: 1
-    },
-    {
-        name: "Dragon Driftway",
-        cup: "Egg Cup",
-        weight: 1
-    },
-    {
-        name: "Mute City",
-        cup: "Egg Cup",
-        weight: 1
-    },
-
-    {
-        name: "Wario's Gold Mine",
+        name: "Wario Stadium",
         cup: "Triforce Cup",
-        weight: 3
+        weight: 1
     },
     {
-        name: "Rainbow Road",
+        name: "GCN Rainbow Road",
         cup: "Triforce Cup",
         weight: 1
     },
@@ -211,217 +222,261 @@ const mapList = [
         cup: "Triforce Cup",
         weight: 1
     },
-
     {
-        name: "Neo Bowser City",
-        cup: "Bell Cup",
-        weight: 2
-    },
-    {
-        name: "Ribbon Road",
+        name: "Dragon Driftway",
         cup: "Bell Cup",
         weight: 1
     },
     {
-        name: "Super Bell Subway",
+        name: "Mute City",
         cup: "Bell Cup",
         weight: 1
     },
     {
-        name: "Big Blue",
+        name: "Wario Stadium",
         cup: "Bell Cup",
-        weight: 1
-    },
-
-    {
-        name: "Baby Park",
-        cup: "Crossing Cup",
-        weight: 3
-    },
-    {
-        name: "Cheese Land",
-        cup: "Crossing Cup",
-        weight: 2
-    },
-    {
-        name: "Wild Woods",
-        cup: "Crossing Cup",
         weight: 1
     },
     {
         name: "Animal Crossing",
-        cup: "Crossing Cup",
+        cup: "Bell Cup",
         weight: 1
     },
-
     {
-        name: "Paris Promenade",
+        name: "Baby Park",
         cup: "Golden Dash Cup",
+        weight: 1
+    },
+    {
+        name: "Cheese Land",
+        cup: "Golden Dash Cup",
+        weight: 1
+    },
+    {
+        name: "Wild Woods",
+        cup: "Golden Dash Cup",
+        weight: 1
+    },
+    {
+        name: "Animal Crossing",
+        cup: "Golden Dash Cup",
+        weight: 1
+    },
+    {
+        name: "Neo Bowser City",
+        cup: "Lucky Cat Cup",
+        weight: 1
+    },
+    {
+        name: "Ribbon Road",
+        cup: "Lucky Cat Cup",
+        weight: 1
+    },
+    {
+        name: "Super Bell Subway",
+        cup: "Lucky Cat Cup",
+        weight: 1
+    },
+    {
+        name: "Big Blue",
+        cup: "Lucky Cat Cup",
         weight: 1
     },
     {
         name: "Toad Circuit",
-        cup: "Golden Dash Cup",
-        weight: 4
-    },
-    {
-        name: "Choco Mountain",
-        cup: "Golden Dash Cup",
-        weight: 2
-    },
-    {
-        name: "Coconut Mall",
-        cup: "Golden Dash Cup",
-        weight: 2
-    },
-
-    {
-        name: "Tokyo Blur",
-        cup: "Lucky Cat Cup",
-        weight: 0
-    },
-    {
-        name: "Shroom Ridge",
-        cup: "Lucky Cat Cup",
-        weight: 2
-    },
-    {
-        name: "Sky Garden",
-        cup: "Lucky Cat Cup",
+        cup: "Turnip Cup",
         weight: 1
-    },
-    {
-        name: "Ninja Hideaway",
-        cup: "Lucky Cat Cup",
-        weight: 1
-    },
-
-    {
-        name: "New York Minute",
-        cup: "Turnip Cup",
-        weight: 0
-    },
-    {
-        name: "Mario Circuit 3",
-        cup: "Turnip Cup",
-        weight: 3
-    },
-    {
-        name: "Kalimari Desert",
-        cup: "Turnip Cup",
-        weight: 2
-    },
-    {
-        name: "Walugi Pinball",
-        cup: "Turnip Cup",
-        weight: 2
-    },
-
-    {
-        name: "Syndey Sprint",
-        cup: "Propeller Cup",
-        weight: 0
-    },
-    {
-        name: "Snow Land",
-        cup: "Propeller Cup",
-        weight: 2
-    },
-    {
-        name: "Mushroom Gorge",
-        cup: "Propeller Cup",
-        weight: 3
-    },
-    {
-        name: "Sky-High Sundae",
-        cup: "Propeller Cup",
-        weight: 0
-    },
-
-    {
-        name: "London Loop",
-        cup: "Rock Cup",
-        weight: 0
-    },
-    {
-        name: "Boo Lake",
-        cup: "Rock Cup",
-        weight: 2
-    },
-    {
-        name: "Rock Rock Mountain",
-        cup: "Rock Cup",
-        weight: 2
-    },
-    {
-        name: "Maple Treeway",
-        cup: "Rock Cup",
-        weight: 3
-    },
-
-    {
-        name: "Berlin Byways",
-        cup: "Moon Cup",
-        weight: 0
-    },
-    {
-        name: "Peach Gardens",
-        cup: "Moon Cup",
-        weight: 2
-    },
-    {
-        name: "Merry Mountain",
-        cup: "Moon Cup",
-        weight: 2
-    },
-    {
-        name: "Rainbow Road",
-        cup: "Moon Cup",
-        weight: 2
-    },
-
-    {
-        name: "Amsterdam Drift",
-        cup: "Fruit Cup",
-        weight: 0
-    },
-    {
-        name: "Riverside Park",
-        cup: "Fruit Cup",
-        weight: 2
-    },
-    {
-        name: "DK Summit",
-        cup: "Fruit Cup",
-        weight: 10
-    },
-    {
-        name: "Yoshi's Island",
-        cup: "Fruit Cup",
-        weight: 2
-    }, 
-
-    {
-        name: "Bangkok Rush",
-        cup: "Boomerang Cup",
-        weight: 0
     },
     {
         name: "Mario Circuit",
-        cup: "Boomerang Cup",
-        weight: 5
+        cup: "Turnip Cup",
+        weight: 1
     },
     {
-        name: "Walugi Stadium",
-        cup: "Boomerang Cup",
-        weight: 10
+        name: "Rock Rock Mountain",
+        cup: "Turnip Cup",
+        weight: 1
     },
     {
-        name: "Singapour Speedway",
+        name: "Piranha Plant Pipeway",
+        cup: "Turnip Cup",
+        weight: 1
+    },
+    {
+        name: "Airship Fortress",
+        cup: "Propeller Cup",
+        weight: 1
+    },
+    {
+        name: "Water Park",
+        cup: "Propeller Cup",
+        weight: 1
+    },
+    {
+        name: "Sweet Sweet Canyon",
+        cup: "Propeller Cup",
+        weight: 1
+    },
+    {
+        name: "Thwomp Ruins",
+        cup: "Propeller Cup",
+        weight: 1
+    },
+    {
+        name: "Mario Circuit",
+        cup: "Rock Cup",
+        weight: 1
+    },
+    {
+        name: "Cheep Cheep Beach",
+        cup: "Rock Cup",
+        weight: 1
+    },
+    {
+        name: "Toad Harbor",
+        cup: "Rock Cup",
+        weight: 1
+    },
+    {
+        name: "Twisted Mansion",
+        cup: "Rock Cup",
+        weight: 1
+    },
+    {
+        name: "Sunshine Airport",
+        cup: "Moon Cup",
+        weight: 1
+    },
+    {
+        name: "Electrodrome",
+        cup: "Moon Cup",
+        weight: 1
+    },
+    {
+        name: "Mount Wario",
+        cup: "Moon Cup",
+        weight: 1
+    },
+    {
+        name: "Cloudtop Cruise",
+        cup: "Moon Cup",
+        weight: 1
+    },
+    {
+        name: "Wii Moo Moo Meadows",
+        cup: "Fruit Cup",
+        weight: 1
+    },
+    {
+        name: "GBA Mario Circuit",
+        cup: "Fruit Cup",
+        weight: 1
+    },
+    {
+        name: "DS Cheep Cheep Beach",
+        cup: "Fruit Cup",
+        weight: 1
+    },
+    {
+        name: "N64 Toad's Turnpike",
+        cup: "Fruit Cup",
+        weight: 1
+    },
+    {
+        name: "DS Tick-Tock Clock",
         cup: "Boomerang Cup",
-        weight: 0
+        weight: 1
+    },
+    {
+        name: "3DS Piranha Plant Slide",
+        cup: "Boomerang Cup",
+        weight: 1
+    },
+    {
+        name: "Wii Grumble Volcano",
+        cup: "Boomerang Cup",
+        weight: 1
+    },
+    {
+        name: "N64 Rainbow Road",
+        cup: "Boomerang Cup",
+        weight: 1
+    },
+    {
+        name: "Daisy Cruiser",
+        cup: "Feather Cup",
+        weight: 1
+    },
+    {
+        name: "Moonview Highway",
+        cup: "Feather Cup",
+        weight: 1
+    },
+    {
+        name: "Squeaky Clean Sprint",
+        cup: "Feather Cup",
+        weight: 1
+    },
+    {
+        name: "Tour Los Angeles Laps",
+        cup: "Cherry Cup",
+        weight: 1
+    },
+    {
+        name: "Sunset Wilds",
+        cup: "Cherry Cup",
+        weight: 1
+    },
+    {
+        name: "Koopa Cape",
+        cup: "Cherry Cup",
+        weight: 1
+    },
+    {
+        name: "Tour Vancouver Velocity",
+        cup: "Cherry Cup",
+        weight: 1
+    },
+    {
+        name: "Tour Rome Avanti",
+        cup: "Acorn Cup",
+        weight: 1
+    },
+    {
+        name: "DK Mountain",
+        cup: "Acorn Cup",
+        weight: 1
+    },
+    {
+        name: "Daisy Circuit",
+        cup: "Acorn Cup",
+        weight: 1
+    },
+    {
+        name: "Piranha Plant Cove",
+        cup: "Acorn Cup",
+        weight: 1
+    },
+    {
+        name: "Tour Madrid Dive",
+        cup: "Spiny Cup",
+        weight: 1
+    },
+    {
+        name: "Rosalina's Ice World",
+        cup: "Spiny Cup",
+        weight: 1
+    },
+    {
+        name: "Bowser's Castle 3",
+        cup: "Spiny Cup",
+        weight: 1
+    },
+    {
+        name: "Rainbow Road",
+        cup: "Spiny Cup",
+        weight: 1
     }
-
 ]
 
 const cupColors = {
@@ -444,7 +499,11 @@ const cupColors = {
     "Rock Cup" : new Color("#7f7f7f"),
     "Moon Cup" : new Color("#ffff00"),
     "Fruit Cup" : new Color("#ff8c00"),
-    "Boomerang Cup" : Color.blue()
+    "Boomerang Cup" : Color.blue(),
+    "Feather Cup" : new Color("#e85709"),
+    "Cherry Cup" : new Color("#ff002f"),
+    "Acorn Cup" : new Color("#ff5500"),
+    "Spiny Cup" : new Color("#3477eb")
 }
 
 
